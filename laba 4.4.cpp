@@ -5,9 +5,6 @@
 #include <time.h>
 #include <math.h>
 
-
-
-
 void maxDiff(Vector& vec1, Vector& vec2, Vector& FinalVec)
 {
     double avgVec1 = 0;
@@ -37,7 +34,6 @@ void maxDiff(Vector& vec1, Vector& vec2, Vector& FinalVec)
     }
 }
 
-
 int main()
 {
     setlocale(LC_ALL, "RU");
@@ -54,23 +50,17 @@ int main()
     vec2.fillVectorRandom();
     vec1.findingScalarLenght();
     vec2.findingScalarLenght();
-
     cout << "Вектор 1: ";
     vec1.outVector();
     cout << endl;
-
     cout << "Вектор 2: ";
     vec2.outVector();
     cout << endl;
-
-    
     vec1.actionsWithScalar(2);
     vec2.actionsWithScalar(3);
-
     cout << "Вектор 1 после преобразования с 2: ";
     vec1.outVector();
     cout << endl;
-
     cout << "Вектор 2 после преобразования с 3: ";
     vec2.outVector();
     cout << endl;
