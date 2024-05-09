@@ -45,7 +45,6 @@ int main()
     
     vec1.setVectorSize(5);
     vec2.setVectorSize(5);
-    /*vec1.setVectorElement(0,4);*/
     vec1.fillVectorRandom();
     vec2.fillVectorRandom();
     vec1.findingScalarLenght();
