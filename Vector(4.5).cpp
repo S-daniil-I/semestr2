@@ -72,14 +72,13 @@ int Vector::getVectorElement(int index)
 {
     if (index < 0 || index >= size)
     {
-        cout << "Íåêîððåêòíûé èíäåêñ!";
+        cout << "ÐÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹Ð¹ Ð¸Ð½Ð´ÐµÐºÑ!";
         return 0;
     }
     else {
         return this->array[index];
     }
 }
-
 
 void Vector::setVectorElement(int index, int data)
 {
@@ -137,7 +136,7 @@ void Vector::findingLenght()
         sum += (pow(array[i], 2));
     }
     lenght = sqrt(sum);
-    cout << "Äëèíà âåêòîðà  = " << lenght << endl;
+    cout << "Ð”Ð»Ð¸Ð½Ð° Ð²ÐµÐºÑ‚Ð¾Ñ€Ð°  = " << lenght << endl;
 }
 
 void Vector::multiWithOtherVector(Vector& vec, Vector& FinalVec)
