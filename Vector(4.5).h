@@ -18,8 +18,8 @@ public:
 	Vector(const Vector& vec);
 	Vector(Vector&& other);
 	Vector operator * (const Vector& vec);
+
 	
-	friend Vector operator *(const Vector& vec1, const Vector& vec2);
 	void setVectorElement(int index, int data);
 	void setVectorSize(int size);
 	void fillVector();
@@ -37,7 +37,7 @@ public:
 	void divWithOtherVector(Vector& vec, Vector& FinalVec);
 	void sumWithOtherVector(Vector& vec, Vector& FinalVec);
 	void subWithOtherVector(Vector& vec, Vector& FinalVec);
-	
+
 	~Vector();
 };
 
